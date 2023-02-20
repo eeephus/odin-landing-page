@@ -79,4 +79,32 @@ button {
     font-weight: bolder;
     color: #1F2937;
     text-align: center;
+    padding: 1.5em 1.5em 1em;
+}
+
+.figure-container {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.figure-container img {
+    align-self: flex-start;
+    height: 200px;
+    border-radius: .3em;
+    margin-bottom: 0;
+}
+
+figcaption {
+    align-self: center;
 }
