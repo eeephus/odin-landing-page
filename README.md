@@ -8,3 +8,5 @@ Also learned a lot about how to answer my own questions by seeing what other peo
 
 All in all, I had a great time applying what I have learned so far into creating a webpage. 
 Picking out different color palettes and fonts was also a great time. 
+
+Still not very comfortable with commit messages on how and when to push to github. Will need to study more about it and practice. 
