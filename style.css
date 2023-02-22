@@ -1,7 +1,16 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #1F2937;
+}
+
 .main-header .container {
-    width: auto;
     max-width: 80%;
-    margin: 0 auto;
+    margin: auto;
     padding: 3em;
     display: flex;
     justify-content: space-between;
@@ -9,13 +18,25 @@
     flex-wrap: wrap;
 }
 
-.main-nav-link li {
-    display: inline-block;
-    align-self: center;
-    justify-content: space-between;
+.main-logo {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
-li a {
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* not sure how to space out nav links */
+
+.main-nav p {
+    display: inline;
+}
+
+p a {
     color: #E5E7EB;
 }
 
@@ -33,15 +54,6 @@ a:hover {
 
 a:active {
     text-decoration: underline;
-}
-
-.main-header {
-    background-color: #1F2937;
-}
-
-.main-logo {
-    font-size: 24px;
-    color: #F9FAF8;
 }
 
 .hero {
@@ -72,6 +84,7 @@ div.hero img {
     padding-left: 2em;
     padding-bottom: 4em;
     overflow: clip;
+    border-radius: .5em;
 }
 
 button {
@@ -130,12 +143,13 @@ figcaption {
 
 .quote {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #E5E7EB;
 }
 
-.quote p {
+.quote {
     width: auto;
     max-width: 100%;
     font-style: italic;
@@ -143,9 +157,10 @@ figcaption {
     font-size: 36px;
     color: #1F2937;
     padding: 2em 5em;
+    display: flex;
 }
 
-.quote span {
+.quote-author {
     align-self: flex-end;
 }
 
