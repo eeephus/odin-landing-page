@@ -7,38 +7,42 @@ body {
 .header {
     background-color: #1F2937;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
 }
 
 .main-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2em 9em 0;
+    padding: 1em 0;
+    gap: 45%;
+}
+
+.logo {
+    display: flex;
+    margin: 0;
+    justify-content: center;
 }
 
 .logo img {
     border-radius: 50%;
     height: 5em;
     width: 5em;
-    flex: 1 0 auto;
-    justify-content: center;
 }
 
 .nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5em;
+    align-self: center;
+    gap: 4em;
 }
 
 /* not sure how to space out nav links */
 
 p a {
     color: #E5E7EB;
+    font-size: 18px;
 }
 
 a:link {
