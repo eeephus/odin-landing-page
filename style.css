@@ -4,37 +4,38 @@ body {
     padding: 0;
 }
 
-.main-header {
+.header {
     background-color: #1F2937;
-}
-
-.main-header .container {
-    max-width: 80%;
-    margin: auto;
-    padding: 3em;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
-}
-
-.main-logo {
-    font-size: 24px;
-    color: #F9FAF8;
 }
 
 .main-nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 2em 9em 0;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
 }
 
 /* not sure how to space out nav links */
-
-.main-nav p {
-    display: inline;
-}
 
 p a {
     color: #E5E7EB;
@@ -78,13 +79,11 @@ a:active {
     color: #E5E7EB;
 }
 
-div.hero img {
-    display: flex;
+.hero>img {
     flex-shrink: 1;
     padding-left: 2em;
     padding-bottom: 4em;
     overflow: clip;
-    border-radius: .5em;
 }
 
 button {
